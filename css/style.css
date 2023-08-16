@@ -125,4 +125,7 @@ input[type=number] {
     margin: 5px;
     align-self: flex-end;
   }
+  .app-body .rate-info {
+    font-size: 26px;
+  }
 }/*# sourceMappingURL=style.css.map */

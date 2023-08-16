@@ -8,7 +8,7 @@ const infoDate = document.querySelector('.date')
 
 const calculate = () => {
 	fetch(
-		`https://api.exchangerate.host/convert?from=${currencyOne.value}&to=${currencyTwo.value}&amount=${amountOne.value}&places=4&source=ecb`
+		`https://api.exchangerate.host/convert?from=${currencyOne.value}&to=${currencyTwo.value}&amount=${amountOne.value}&source=ecb`
 	)
 		.then(res => res.json())
 		.then(data => {
