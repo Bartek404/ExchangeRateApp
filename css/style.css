@@ -58,11 +58,11 @@ body {
 .app-body input {
   margin-bottom: 10px;
   width: 100%;
-  font-size: 60px;
+  font-size: 40px;
 }
 .app-body select {
   padding: 10px 20px;
-  font-size: 36px;
+  font-size: 28px;
   cursor: pointer;
 }
 .app-body option {
@@ -114,6 +114,12 @@ input[type=number] {
   }
   .app-body {
     flex-direction: row;
+  }
+  .app-body input {
+    font-size: 60px;
+  }
+  .app-body select {
+    font-size: 36px;
   }
   .app-body .swap {
     margin: 5px;

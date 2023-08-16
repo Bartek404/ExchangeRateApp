@@ -64,12 +64,12 @@ body {
 	input {
 		margin-bottom: 10px;
 		width: 100%;
-		font-size: 60px;
+		font-size: 40px;
 	}
 
 	select {
 		padding: 10px 20px;
-		font-size: 36px;
+		font-size: 28px;
 		cursor: pointer;
 	}
 
@@ -128,6 +128,14 @@ input[type='number'] {
 
 	.app-body {
 		flex-direction: row;
+
+		input {
+			font-size: 60px;
+		}
+
+		select {
+			font-size: 36px;
+		}
 
 		.swap {
 			margin: 5px;
