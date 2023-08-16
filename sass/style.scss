@@ -1,0 +1,137 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	height: 100vh;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #29303b;
+}
+
+.wrapper {
+	margin: 10px;
+	padding: 20px;
+	max-width: 800px;
+	background-image: linear-gradient(#3f4b59, #333d46);
+	color: #fff;
+	text-align: center;
+	border: 1px solid #1c232d;
+	border-radius: 15px;
+	box-shadow: 0 0 15px #1c232d;
+
+	h1 {
+		margin-bottom: 10px;
+		font-size: 36px;
+	}
+
+	p {
+		margin-bottom: 50px;
+		font-size: 26px;
+		font-weight: 200;
+
+		&:last-of-type {
+			margin-top: 15px;
+			font-size: 18px;
+			line-height: 26px;
+		}
+	}
+
+
+	.rate-info {
+		margin-top: 30px;
+		margin-bottom: 0;
+	}
+}
+
+.app-body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	.section-left,
+	.section-right {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	input {
+		margin-bottom: 10px;
+		width: 100%;
+		font-size: 60px;
+	}
+
+	select {
+		padding: 10px 20px;
+		font-size: 36px;
+		cursor: pointer;
+	}
+
+	option {
+		color: #333;
+	}
+
+	input,
+	select {
+		color: #fff;
+		border: none;
+		background: none;
+		text-align: center;
+
+		&:focus {
+			outline: none;
+			color: rgb(67, 171, 255);
+		}
+	}
+
+	.swap {
+		margin: 25px 0;
+		padding: 5px 50px;
+		background-image: linear-gradient(45deg, #2b98e7, #11e763);
+		font-size: 30px;
+		border: none;
+		border-radius: 25px;
+		color: #fff;
+		cursor: pointer;
+
+		&:focus {
+			outline: none;
+			background-image: linear-gradient(45deg, #317fcc, #1fc06a);
+		}
+	}
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+@media (min-width: 768px) {
+	body {
+		align-items: center;
+	}
+
+	.wrapper {
+		padding: 50px;
+	}
+
+	.app-body {
+		flex-direction: row;
+
+		.swap {
+			margin: 5px;
+			align-self: flex-end;
+		}
+	}
+}
